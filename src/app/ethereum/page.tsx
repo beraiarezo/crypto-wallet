@@ -1,15 +1,22 @@
 import Head from "next/head";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ethereum Blockchain | HiWallet OPENGRAPH",
+  description: "Description of the Ethereum blockchain page",
+  robots: "https://rezi-crypto-wallet.netlify.app/ethereum",
+  openGraph: {
+    title: "Ethereum Blockchain | HiWallet",
+    description: "Description of the Ethereum blockchain page OPENGRAPH",
+    url: "https://rezi-crypto-wallet.netlify.app/ethereum",
+    images: ["URL to image"],
+  },
+};
 
 export default function Ethereum() {
   return (
     <>
       <Head>
-        <title>Ethereum ბლოკჩეინი | HiWallet</title>
-        <meta name="description" content="Description of the home page" />
-        <link
-          rel="canonical"
-          href="https://rezi-crypto-wallet.netlify.app/ethereum"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

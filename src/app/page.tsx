@@ -4,11 +4,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>HD საფულე | HiWallet</title>
-        <meta
-          name="description"
-          content="HD საფულე, კრიპტო საფულე, დაცული საფულე"
-        />
         <link rel="canonical" href="https://rezi-crypto-wallet.netlify.app" />
         <script
           type="application/ld+json"

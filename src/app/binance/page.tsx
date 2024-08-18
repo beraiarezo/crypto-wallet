@@ -1,15 +1,23 @@
 import Head from "next/head";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Binance ბლოკჩეინი | HiWallet",
+  description: "Description of the Binance blockchain page",
+  robots: "https://rezi-crypto-wallet.netlify.app/binance",
+  openGraph: {
+    title: "Binance ბლოკჩეინი | HiWallet OPENGRAPH",
+    description: "Description of the Binance blockchain page OPENGRAPH",
+    url: "https://rezi-crypto-wallet.netlify.app/binance",
+    images: ["URL to image"],
+  },
+};
+
 export default function Binance() {
   return (
     <>
       <Head>
-        <title>Binance ბლოკჩეინი | HiWallet</title>
-        <meta name="description" content="Description of the home page" />
-        <link
-          rel="canonical"
-          href="https://rezi-crypto-wallet.netlify.app/binance"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
