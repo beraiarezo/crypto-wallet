@@ -23,6 +23,7 @@ const config: Config = {
       blueDark: "#2871FF",
       blue: "#0A3998",
       white: "#fff",
+      black: "#000",
     },
   },
   plugins: [],

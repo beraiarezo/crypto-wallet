@@ -8,11 +8,17 @@ interface NavLinkProps {
 }
 
 const NavLink: FC<NavLinkProps> = ({ pathname, path, text }) => {
+  const isActive = pathname === path;
+
   return (
     <Link
-      className={`border-white px-3 py-4 w-full border-l-2 mb-3 font-bpg-arial
-    hover:text-blue hover:bg-blueLight hover:border-blueDark
-    ${pathname === path && "text-blue bg-blueLight border-blueDark"}`}
+      className={`border-l-2 mb-3 px-3 py-4 w-full font-bpg-arial 
+      ${
+        isActive
+          ? "border-blueDark text-blue bg-blueLight"
+          : "border-white text-black hover:text-blue hover:bg-blueLight hover:border-blueDark"
+      }
+    `}
       href={path}
     >
       {text}

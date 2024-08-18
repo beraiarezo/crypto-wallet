@@ -17,10 +17,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <meta
-        name="google-site-verification"
-        content="ubh0bClFx-hRPKMuLcVtu-g8qhyf54qYg7lwBZP5ukc"
-      />
+      <head>
+        <meta
+          name="google-site-verification"
+          content="ubh0bClFx-hRPKMuLcVtu-g8qhyf54qYg7lwBZP5ukc"
+        />
+        <meta name="description" content="Your website description" />
+        <meta name="keywords" content="keyword1, keyword2" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Your Site Title" />
+        <meta property="og:description" content="Your site description" />
+        <meta property="og:image" content="URL to image" />
+        <meta
+          property="og:url"
+          content="https://rezi-crypto-wallet.netlify.app/"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </head>
       <body className={inter.className}>
         <Navigation />
         {children}
