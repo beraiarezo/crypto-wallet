@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Main } from "@/components";
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
           }}
         />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-between p-0"></main>
+      <Main>
+        <h1>HD WALLETS</h1>
+      </Main>
     </>
   );
 }

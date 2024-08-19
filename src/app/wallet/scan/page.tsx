@@ -1,9 +1,8 @@
 import Head from "next/head";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Binance ბლოკჩეინი | HiWallet",
+  title: "საფულის შემოწმება | HiWallet",
   description: "Description of the Binance blockchain page",
   robots: "https://rezi-crypto-wallet.netlify.app/binance",
   openGraph: {
@@ -14,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Binance() {
+export default function Scan() {
   return (
     <>
       <Head>
@@ -46,9 +45,6 @@ export default function Binance() {
           }}
         />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-between p-0">
-        <h1>Binance</h1>
-      </main>
     </>
   );
 }

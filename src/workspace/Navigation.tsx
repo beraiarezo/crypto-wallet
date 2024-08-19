@@ -6,16 +6,8 @@ import Image from "next/image";
 
 const links = [
   {
-    title: "HD საფულე",
-    path: "/",
-  },
-  {
-    title: "BINANCE ბლოკჩეინი",
-    path: "/binance",
-  },
-  {
-    title: "ETHEREUM ბლოკჩეინი",
-    path: "/ethereum",
+    title: "საფულე",
+    path: "/wallet",
   },
 ];
 
@@ -23,15 +15,14 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed left-0 top-0 w-64 h-full bg-white">
+    <header className="fixed left-0 top-0 w-64 h-full bg-white">
       <div className="justify-center items-center flex mb-5">
         <Image
-          src="/logo-white.svg"
+          src="/logo-color.svg"
           alt="HiWallet Logo"
-          className="dark:invert"
           width={100}
           height={24}
-          // priority
+          priority
         />
       </div>
       <nav className="flex flex-wrap">
@@ -44,6 +35,6 @@ export default function Navigation() {
           />
         ))}
       </nav>
-    </div>
+    </header>
   );
 }

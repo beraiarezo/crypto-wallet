@@ -8,11 +8,11 @@ interface NavLinkProps {
 }
 
 const NavLink: FC<NavLinkProps> = ({ pathname, path, text }) => {
-  const isActive = pathname === path;
+  const isActive = path === "/" ? pathname === path : pathname.startsWith(path);
 
   return (
     <Link
-      className={`border-l-2 mb-3 px-3 py-4 w-full font-bpg-arial 
+      className={`border-l-2 mb-3 px-3 py-4 w-full font-bpg-arial font-bold text-sm
       ${
         isActive
           ? "border-blueDark text-blue bg-blueLight"
